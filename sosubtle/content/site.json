@@ -1,0 +1,83 @@
+{
+  "_help": "Business details used on every page. Anything with \"confirmed\": false is shown in the preview with a 'to confirm' tag and left out of the live (production) build until Natasha confirms it and changes it to true.",
+  "name": "So Subtle Aesthetics",
+  "owner": "Natasha Shisgal",
+  "siteUrl": "",
+  "tagline": "Subtle, natural-looking aesthetic treatments in Dartford, Kent.",
+  "bookingUrl": "https://that-time.co.uk/SoSubtleAesthetics",
+  "phone": {
+    "display": "07737 508747",
+    "e164": "+447737508747",
+    "confirmed": false,
+    "source": "Listed consistently on Fresha, Yell and Wheree directory pages (not on a page run by the business)."
+  },
+  "email": {
+    "display": "",
+    "confirmed": false,
+    "source": "No public business email found. Enquiries are delivered to the ENQUIRY_TO_EMAIL setting on the server, which Natasha must supply."
+  },
+  "address": {
+    "street": "Oakfield Lane",
+    "locality": "Dartford",
+    "region": "Kent",
+    "postcode": "DA1 2SY",
+    "country": "GB",
+    "confirmed": false,
+    "source": "Fresha and Wheree listings. Confirm whether the street address should be public or shared on booking only."
+  },
+  "portrait": { "file": "", "alt": "Natasha Shisgal in the treatment room", "_help": "Put the photo in src/assets/img/ and enter its path here, e.g. assets/img/natasha.jpg" },
+  "hours": "By appointment",
+  "enquiry": {
+    "endpoint": "/api/enquiry",
+    "turnstileSiteKey": ""
+  },
+  "serviceArea": ["Dartford", "Bexley", "Swanley", "Gravesend", "North West Kent", "South East London"],
+  "serviceAreaConfirmed": false,
+  "company": {
+    "legalName": "So Subtle Aesthetics Ltd",
+    "number": "08046899",
+    "academyLegalName": "So Subtle Aesthetics Academy Ltd",
+    "academyNumber": "15416981"
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "handle": "@sosubtleaesthetics",
+      "url": "https://www.instagram.com/sosubtleaesthetics",
+      "confirmed": true,
+      "source": "Supplied in the brief."
+    },
+    {
+      "platform": "tiktok",
+      "label": "TikTok",
+      "handle": "@sosubtleaesthetics",
+      "url": "https://www.tiktok.com/@sosubtleaesthetics",
+      "confirmed": true,
+      "source": "Profile name 'Natasha Shisgal', Dartford location, links to the same Beacons shop."
+    },
+    {
+      "platform": "facebook",
+      "label": "Facebook",
+      "handle": "So Subtle Aesthetics",
+      "url": "https://www.facebook.com/btlkent/",
+      "confirmed": false,
+      "source": "Page titled 'So Subtle Aesthetics', Dartford, 'Facial Anti Ageing Specialist'. Likely match (Natasha also directs BTL Advanced Aesthetics) but not confirmed. Hidden until confirmed."
+    }
+  ],
+  "google": {
+    "reviewsUrl": "",
+    "writeReviewUrl": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=So+Subtle+Aesthetics+Dartford+DA1+2SY",
+    "rating": null,
+    "reviewCount": null,
+    "ratingCheckedOn": "",
+    "confirmed": false,
+    "source": "Google Business Profile not yet verified. Add the profile's review link and 'write a review' link (from the profile dashboard) to switch these buttons on."
+  },
+  "award": {
+    "text": "",
+    "confirmed": false,
+    "source": "Facebook page mentions an 'award-winning practitioner 2024' but not the award or the awarding body. Add the exact award title and organiser to show it."
+  }
+}

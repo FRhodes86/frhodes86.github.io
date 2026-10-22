@@ -1,0 +1,118 @@
+{
+  "_help": "Treatment menu. To change a price, type it in 'price' (for example \"£180\" or \"from £150\"). Leave price empty to send visitors to the live price on the booking page. 'confirmed': false keeps a treatment out of the live site. Never add prices, offers or product names to anything marked 'prescriptionOnly'.",
+  "note": "Live prices, times and availability are always shown on the booking page.",
+  "depositPolicy": "",
+  "depositPolicyConfirmed": false,
+  "categories": [
+    {
+      "id": "lips",
+      "name": "Lips",
+      "intro": "Lip treatments are planned around the shape you already have. Natasha will talk you through what is realistic for your lips before anything is booked in.",
+      "treatments": [
+        {
+          "id": "lip-enhancement",
+          "name": "Lip enhancement",
+          "summary": "Dermal filler used to add definition, balance or a little volume, in amounts planned with you at consultation.",
+          "price": "",
+          "duration": "",
+          "consultation": "Discussed before treatment",
+          "bookingUrl": "",
+          "confirmed": true,
+          "source": "Lip treatments are the focus of the TikTok profile and the Level Up Lips Masterclass."
+        },
+        {
+          "id": "russian-lips",
+          "name": "Russian lip technique",
+          "summary": "A filler technique that concentrates on lifting and shaping the lip profile. Natasha will advise whether it suits your lips.",
+          "price": "",
+          "duration": "",
+          "consultation": "Discussed before treatment",
+          "bookingUrl": "",
+          "confirmed": false,
+          "source": "Mentioned on the Facebook page 'So Subtle Aesthetics' (not yet confirmed as the official page)."
+        }
+      ]
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "intro": "Treatments that work on the quality of the skin itself. Most are recommended as a short course, which Natasha will plan with you.",
+      "treatments": [
+        {
+          "id": "microneedling",
+          "name": "Microneedling",
+          "summary": "Fine, controlled micro-channels are made in the skin as part of a skin-quality treatment, often chosen for texture and fine lines.",
+          "price": "",
+          "duration": "",
+          "consultation": "Skin assessment first",
+          "bookingUrl": "",
+          "confirmed": true,
+          "source": "TikTok @sosubtleaesthetics posts on microneedling."
+        },
+        {
+          "id": "microneedling-polynucleotides",
+          "name": "Microneedling with polynucleotides",
+          "summary": "Microneedling combined with a polynucleotide product applied during the same session.",
+          "price": "",
+          "duration": "",
+          "consultation": "Skin assessment first",
+          "bookingUrl": "",
+          "confirmed": true,
+          "source": "TikTok @sosubtleaesthetics posts on microneedling with polynucleotides."
+        },
+        {
+          "id": "polynucleotides",
+          "name": "Polynucleotides",
+          "summary": "An injectable skin treatment often chosen for the delicate under-eye area. Small raised bumps at the injection points are normal straight afterwards and settle on their own.",
+          "price": "",
+          "duration": "",
+          "consultation": "Discussed before treatment",
+          "bookingUrl": "",
+          "confirmed": true,
+          "source": "TikTok @sosubtleaesthetics posts on polynucleotides, fine lines and dark circles, and on post-treatment bumps."
+        },
+        {
+          "id": "skin-boosters",
+          "name": "Skin boosters",
+          "summary": "Injectable hydration treatments for skin quality.",
+          "price": "",
+          "duration": "",
+          "consultation": "Discussed before treatment",
+          "bookingUrl": "",
+          "confirmed": false,
+          "source": "Third-party directory listing only."
+        }
+      ]
+    },
+    {
+      "id": "face",
+      "name": "Face",
+      "intro": "Facial treatments are always consultation-led. Natasha will only recommend what suits your face and what you would like to achieve, and she will tell you if she thinks a treatment is not right for you.",
+      "treatments": [
+        {
+          "id": "dermal-filler-face",
+          "name": "Facial dermal filler",
+          "summary": "Dermal filler for areas such as the cheeks, chin or jawline, planned to keep your features in proportion.",
+          "price": "",
+          "duration": "",
+          "consultation": "Consultation required",
+          "bookingUrl": "",
+          "confirmed": false,
+          "source": "Fresha directory listing (category data, not confirmed by the business)."
+        },
+        {
+          "id": "lines-wrinkles-consultation",
+          "name": "Consultation for lines and wrinkles",
+          "summary": "A face-to-face consultation to talk through lines and wrinkles and the options that may suit you, including their risks, alternatives and the choice of no treatment.",
+          "price": "",
+          "duration": "",
+          "consultation": "This is the consultation",
+          "bookingUrl": "",
+          "prescriptionOnly": true,
+          "confirmed": false,
+          "source": "Anti-wrinkle injections appear in Fresha category data. These are prescription-only medicines, so the website promotes the consultation only: no product name, price or offer."
+        }
+      ]
+    }
+  ]
+}

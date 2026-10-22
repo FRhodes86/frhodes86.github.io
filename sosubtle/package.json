@@ -1,0 +1,24 @@
+{
+  "name": "so-subtle-aesthetics-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for So Subtle Aesthetics and the So Subtle Academy.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:prod": "node scripts/build.mjs --production",
+    "build:artifact": "node scripts/build.mjs --artifact --out dist-artifact",
+    "dev": "node scripts/build.mjs && node scripts/dev-server.mjs",
+    "test": "node scripts/build.mjs && node --test tests/*.test.mjs",
+    "test:e2e": "node scripts/build.mjs && node tests/e2e.mjs"
+  },
+  "optionalDependencies": {
+    "sharp": "0.33.5"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.2"
+  }
+}

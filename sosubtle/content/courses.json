@@ -1,0 +1,51 @@
+{
+  "_help": "Academy courses. Add a new course by copying a block. 'enrolUrl' is where the Enrol button goes (keep using the Beacons checkout). Leave 'price' empty to say 'price shown at checkout'.",
+  "courses": [
+    {
+      "id": "level-up-lips",
+      "featured": true,
+      "title": "Level Up Lips Masterclass",
+      "kicker": "Masterclass",
+      "summary": "A hands-on lip masterclass for practitioners who already inject and want to refine their technique, placement and presentation.",
+      "format": "In-person training day with live models",
+      "audience": "Experienced injectors",
+      "entryRequirements": "",
+      "includes": [
+        "3 live models plus 1 demonstration",
+        "Advanced needle techniques and placement",
+        "Social media and lighting session",
+        "Course manual",
+        "Gift bag",
+        "Certificate",
+        "Ongoing support after the day"
+      ],
+      "certificateNote": "",
+      "price": "",
+      "dates": "",
+      "location": "",
+      "terms": "",
+      "enrolUrl": "https://shop.beacons.ai/natashashisgal1/7b629491-477d-4ea5-8808-547e070ba590",
+      "confirmed": true,
+      "source": "Course name from the Beacons product link in the brief; contents as listed on TikTok @sosubtleaesthetics. Price, entry requirements, certificate wording, dates, venue and refund terms still need confirming from the Beacons page."
+    },
+    {
+      "id": "one-to-one",
+      "featured": false,
+      "title": "1-2-1 training and refresher days",
+      "kicker": "Bespoke",
+      "summary": "Individual training and refresher days, arranged directly with Natasha around what you want to work on.",
+      "format": "One-to-one, by arrangement",
+      "audience": "Practitioners",
+      "entryRequirements": "",
+      "includes": [],
+      "certificateNote": "",
+      "price": "",
+      "dates": "",
+      "location": "",
+      "terms": "",
+      "enrolUrl": "",
+      "confirmed": true,
+      "source": "Listed on TikTok @sosubtleaesthetics ('1-2-1 Training & Refresher days are also available')."
+    }
+  ]
+}

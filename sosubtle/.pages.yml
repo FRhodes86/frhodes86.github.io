@@ -1,0 +1,165 @@
+# Pages CMS (https://pagescms.org) - free editing screens for this site.
+# Natasha signs in with GitHub at app.pagescms.org, opens this repository and
+# edits the forms below. Each save rebuilds the live site automatically.
+# Paths assume this folder is the root of its own repository.
+
+media:
+  input: content/uploads
+  output: uploads
+
+content:
+  - name: treatments
+    label: Treatments & prices
+    type: file
+    path: content/treatments.json
+    format: json
+    fields:
+      - { name: note, label: Note shown under the menu, type: string }
+      - { name: depositPolicy, label: Deposit policy (leave blank to say 'shown when you book'), type: text }
+      - { name: depositPolicyConfirmed, label: Deposit policy is correct, type: boolean }
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Short id (lowercase, no spaces), type: string, required: true }
+          - { name: name, label: Category name, type: string, required: true }
+          - { name: intro, label: Introduction, type: text }
+          - name: treatments
+            label: Treatments
+            type: object
+            list: true
+            fields:
+              - { name: id, label: Short id (lowercase, no spaces), type: string, required: true }
+              - { name: name, label: Treatment name, type: string, required: true }
+              - { name: summary, label: Description, type: text }
+              - { name: price, label: "Price (e.g. £180 or from £150). Leave blank to use the booking page price", type: string }
+              - { name: duration, label: Appointment length (e.g. 45 minutes), type: string }
+              - { name: consultation, label: Consultation note, type: string }
+              - { name: bookingUrl, label: Direct booking link for this treatment (optional), type: string }
+              - { name: prescriptionOnly, label: "Prescription-only medicine (no price, product name or offer will be shown)", type: boolean }
+              - { name: confirmed, label: Show on the live site, type: boolean }
+
+  - name: courses
+    label: Academy courses
+    type: file
+    path: content/courses.json
+    format: json
+    fields:
+      - name: courses
+        label: Courses
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Short id, type: string, required: true }
+          - { name: featured, label: Featured course, type: boolean }
+          - { name: title, label: Course title, type: string, required: true }
+          - { name: kicker, label: Small label (e.g. Masterclass), type: string }
+          - { name: summary, label: Summary, type: text }
+          - { name: format, label: Format, type: string }
+          - { name: audience, label: Who it is for, type: string }
+          - { name: entryRequirements, label: Entry requirements, type: text }
+          - { name: includes, label: "What's included", type: string, list: true }
+          - { name: certificateNote, label: Certificate wording / accreditation, type: text }
+          - { name: price, label: Price, type: string }
+          - { name: dates, label: Dates, type: string }
+          - { name: location, label: Venue, type: string }
+          - { name: terms, label: Refund and cancellation summary, type: text }
+          - { name: enrolUrl, label: Enrol link (Beacons), type: string }
+          - { name: confirmed, label: Show on the live site, type: boolean }
+
+  - name: testimonials
+    label: Testimonials
+    type: file
+    path: content/testimonials.json
+    format: json
+    fields:
+      - name: testimonials
+        label: Testimonials (genuine, with permission)
+        type: object
+        list: true
+        fields:
+          - { name: quote, label: Review text (word for word), type: text, required: true }
+          - { name: author, label: "Name (first name and initial, e.g. Sarah K.)", type: string, required: true }
+          - { name: treatment, label: Treatment (optional), type: string }
+          - { name: source, label: "Where it was posted (e.g. Google)", type: string }
+          - { name: date, label: Date of review, type: string }
+          - { name: showOnHome, label: Show on home page, type: boolean }
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: images
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: file, label: Photo, type: image, required: true }
+          - { name: alt, label: Description for screen readers, type: string, required: true }
+          - { name: caption, label: Caption (optional), type: string }
+          - name: category
+            label: Category
+            type: select
+            options: { values: [treatments, clinic, brand, academy, results] }
+          - { name: treatment, label: "Treatment id (results photos only)", type: string }
+          - { name: identifiable, label: A client can be identified, type: boolean }
+          - { name: consent, label: I hold the client's written consent, type: boolean }
+          - { name: unedited, label: "Unedited (no filters or retouching)", type: boolean }
+          - { name: showOnHome, label: Show on home page, type: boolean }
+
+  - name: site
+    label: Business details
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: tagline, label: Tagline, type: string }
+      - { name: siteUrl, label: "Website address once live (e.g. https://www.example.co.uk)", type: string }
+      - { name: bookingUrl, label: Booking page link, type: string }
+      - { name: hours, label: Opening hours, type: string }
+      - name: phone
+        label: Telephone
+        type: object
+        fields:
+          - { name: display, label: As shown, type: string }
+          - { name: e164, label: "International format (+447…)", type: string }
+          - { name: confirmed, label: Show on the live site, type: boolean }
+      - name: address
+        label: Address
+        type: object
+        fields:
+          - { name: street, label: Street, type: string }
+          - { name: locality, label: Town, type: string }
+          - { name: region, label: County, type: string }
+          - { name: postcode, label: Postcode, type: string }
+          - { name: confirmed, label: Show the full address on the live site, type: boolean }
+      - name: google
+        label: Google reviews
+        type: object
+        fields:
+          - { name: reviewsUrl, label: Link to Google reviews, type: string }
+          - { name: writeReviewUrl, label: "'Leave a review' link", type: string }
+          - { name: mapsUrl, label: Google Maps link, type: string }
+          - { name: rating, label: "Star rating (only with the date checked)", type: string }
+          - { name: reviewCount, label: Number of reviews, type: string }
+          - { name: ratingCheckedOn, label: Date rating was checked, type: string }
+          - { name: confirmed, label: Show on the live site, type: boolean }
+      - name: social
+        label: Social profiles
+        type: object
+        list: true
+        fields:
+          - { name: platform, label: "Platform (instagram, tiktok, facebook)", type: string }
+          - { name: label, label: Name, type: string }
+          - { name: handle, label: Handle, type: string }
+          - { name: url, label: Link, type: string }
+          - { name: confirmed, label: Show on the live site, type: boolean }
+      - name: award
+        label: Award
+        type: object
+        fields:
+          - { name: text, label: "Award title and organiser", type: string }
+          - { name: confirmed, label: Show on the live site, type: boolean }
