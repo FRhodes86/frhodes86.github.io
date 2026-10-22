@@ -179,8 +179,10 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ""}
 ${canonical ? `<meta property="og:url" content="${esc(canonical)}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/bodoni-moda-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/hanken-grotesk-normal.woff2" as="font" type="font/woff2" crossorigin>
+${ARTIFACT
+  // The claude.ai preview only allows fonts from Google Fonts; the real site self-hosts them
+  ? '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Hanken+Grotesk:wght@300..600&display=swap">'
+  : '<link rel="preload" href="assets/fonts/bodoni-moda-normal.woff2" as="font" type="font/woff2" crossorigin>\n<link rel="preload" href="assets/fonts/hanken-grotesk-normal.woff2" as="font" type="font/woff2" crossorigin>'}
 <link rel="stylesheet" href="assets/css/site.css">
 ${jsonLd(page)}`;
 
